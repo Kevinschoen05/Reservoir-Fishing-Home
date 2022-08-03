@@ -1,0 +1,572 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+  #hero {
+    height: auto;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("/images/SplashImage.jpeg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  #dark {
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 0;
+  }
+
+  .heroText {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .hero-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  #home-h {
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .heroText h2 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  #home-p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    width: 100%;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
+  .heroText button {
+    width: 100%;
+    height: 55px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .heroText a {
+    display: block;
+    width: 200px;
+    margin: auto;
+  }
+
+  .heroText .button-solid {
+    margin-bottom: 10px;
+  }
+
+  .heroText .button-transparent {
+    border: none;
+  }
+
+  .contact-bar {
+    border: 2px;
+
+    border-style: solid;
+
+    border-color: (pick a color you like but visible);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .heroText {
+    margin-top: 100px;
+    max-width: 570px;
+  }
+
+  #home-h {
+    font-size: 3em;
+  }
+
+  .heroText h2 {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #hero .container {
+    max-width: 800px;
+  }
+
+  #hero {
+    background-attachment: fixed;
+    min-height: 100vh; /* makes this section as tall as whatever the screen is */
+  }
+
+  .heroText {
+    margin-top: 250px;
+    margin-left: 0;
+    max-width: 600px;
+  }
+
+  #home-h {
+    text-align: left;
+    font-size: 45px;
+  }
+
+  .heroText h2 {
+    text-align: left;
+    line-height: 1.7em;
+    width: 400px;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .heroText a {
+    display: inline-block;
+  }
+
+  .heroText .button-solid {
+    margin-right: 20px;
+  }
+
+  .heroText .button-transparent {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #hero .container {
+    max-width: 1200px;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Features          -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+  #features {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #features h2 {
+    text-transform: uppercase;
+    color: #222;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  #features p {
+    margin-bottom: 25px;
+  }
+
+  #features .button-solid {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #features ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+
+  #features ul li {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    position: relative;
+  }
+  #features ul li:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 11px;
+    width: 11px;
+    left: -20px;
+    top: 9px;
+    border-radius: 50%;
+    background: url("/images/bullet.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Image and Background */
+
+  #features .b-left {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 78px;
+  }
+  #features .b-left:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 90%;
+    width: 90%;
+    background: var(--primary);
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  #features .b-left:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 90%;
+    width: 90%;
+    background: url("../images/side-image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+
+ 
+}
+@media only screen and (min-width: 375px) {
+  #features ul li {
+    font-size: 14px;
+  } 
+}
+@media only screen and (min-width: 48em) {
+  #features {
+    padding-bottom: 50px;
+}
+
+#features .b-left {
+    width: 474px;
+    margin-bottom: 117px;
+}
+
+#features ul {
+    max-width: 494px;
+}
+
+#features ul li {
+    font-size: 20px;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-width: 64em) {
+  
+  #features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 200px;
+}
+
+#features .b-left {
+    width: 372px;
+    height: 505px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+#features .right {
+    width: 600px;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+#features .right:before,
+#features .right:after {
+    display: none;
+}
+
+#features h2 {
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+
+#features p {
+    text-align: left;
+    margin-left: 0;
+}
+
+#features ul {
+    margin-left: 0;
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+
+#features a {
+    margin-left: 0;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+  
+  #features .b-left {
+    width: 482px;
+    height: 625px;
+    margin-left: 0;
+}
+}
+
+
+/*-- -------------------------- -->
+<---          Customization     -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+#customization {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 20%;
+}
+#customization h2 {
+   
+    text-transform: uppercase;
+    color: #222;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+  
+}
+
+#customization ul li {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+#customization ul li:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 11px;
+  width: 11px;
+  left: -20px;
+  top: 9px;
+  border-radius: 50%;
+  background: url("/images/bullet.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#customization .button-solid {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#customization .b-right {
+  width: 250px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  margin-top: 78px;
+}
+#customization .b-right:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 90%;
+  width: 90%;
+  background: var(--primary);
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+#customization .b-right:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 90%;
+  width: 90%;
+  background: url("../images/side-image2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+}
+@media only screen and (min-width: 375px) {
+  #customization ul li {
+    font-size: 14px;
+  } 
+}
+@media only screen and (min-width: 48em) {
+  #customization {
+    padding-bottom: 200px;
+}
+
+#customization .b-right {
+    width: 474px;
+    margin-bottom: 117px;
+}
+
+#customization ul {
+    max-width: 494px;
+}
+
+#customization ul li {
+    font-size: 20px;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-width: 64em) {
+  
+  #customization {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 100px;
+}
+
+#customization .b-right {
+    width: 372px;
+    height: 505px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+#customization .left {
+    width: 600px;
+    padding-top: 20px;
+    margin-right: 30px;
+}
+
+#customization .left:before,
+#customization .left:after {
+    display: none;
+}
+
+#customization h2 {
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
+    display: block;
+}
+
+#customization p {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+#customization ul {
+    margin-left: 30px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+#customization a {
+    margin-left: 300px;
+}
+}
+@media only screen and (min-width: 1200px) {
+
+  #customization .b-right {
+      width: 482px;
+      height: 625px;
+      margin-right: 0;
+  }
+}
