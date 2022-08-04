@@ -7,7 +7,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/image-10.jpg');
+        background: url('/images/SplashImage.jpeg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -63,7 +63,7 @@
         position: absolute;
         width: 180px;
         height: 200px;
-        border: 10px solid rgba(255,218,45, .4);
+        border: 10px solid #6D9886;;
         z-index: -1;
     }
     
@@ -116,7 +116,7 @@
 
     #hero {
         height: 600px;
-        background: url('/images/image-10.jpg');
+        background: url('/images/SplashImage.jpeg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -261,7 +261,7 @@
         font-weight: 900;
         font-size: 1em;
         margin: 0;
-        background: var(--primary);
+        background: #6D9886;
         color: #fff;
         width: auto;
         padding: 10px 30px;
@@ -269,11 +269,11 @@
     }
     
     #contact-form button::before {
-        border-color: var(--primary);
+        border-color: #6D9886;
     }
     
     #contact-form button::after {
-        border-color: var(--primary);
+        border-color: #6D9886;
     }
     
     #contact-form button[type="submit"]:hover {
