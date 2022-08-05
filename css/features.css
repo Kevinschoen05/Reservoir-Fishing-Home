@@ -168,26 +168,88 @@
         -ms-flex-align: left;
         align-items: left;
         margin-bottom: 25px;
+        margin-top: 50px;
         border-left: 6px solid #6D9886;
         padding-left: 20px
       }
-    #features .feature1 {
-        width: 500px;
-        height: 500px;
+    #features .feature {
+        width: 300px;
+        height: 300px;
         margin: auto;
         position: relative;
         z-index: 1;
         margin-top: 25px;
     }
-    #features .feature1:after {
+
+    #features .record-fish:after {
         content: "";
         position: absolute;
         display: block;
         height: 100%;
         width: 100%;
-        background: url("../images/IMG_4479.gif");
-        background-size: cover;
-        background-position: left;
+        background: url("../images/record-fish.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .reservoir-page:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/reservoir-page.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .trip-catch-map:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/trip-catch-map.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .species-totals:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/species-totals.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .angler-totals:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/angler-totals.png");
+        background-size: contain;
+        background-position: center;
         background-repeat: no-repeat;
         opacity: 1;
         bottom: 0px;
@@ -197,6 +259,115 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) {
 
+    
+    #features .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 0, 15px
+    }
+    #features h2 {
+        text-transform: uppercase;
+        color: #222;
+        text-align: left;
+        font-size: 30px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+        align-items: left;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        border-left: 6px solid #6D9886;
+        padding-left: 20px
+      }
+    #features .feature {
+        width: 700px;
+        height: 600px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        margin-top: 25px;
+    }
+    #features .record-fish:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/record-fish.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .reservoir-page:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/reservoir-page.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .trip-catch-map:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/trip-catch-map.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .species-totals:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/species-totals.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      #features .angler-totals:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/angler-totals.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+      }
 }
