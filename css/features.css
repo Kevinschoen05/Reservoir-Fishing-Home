@@ -256,6 +256,27 @@
         right: 0px;
         z-index: 1;
       }
+      #features ul li {
+        font-family: "Oswald", sans-serif;
+        font-size: 14px;
+        list-style: none;
+        margin-bottom: 0px;
+        position: relative;
+      }
+      #features ul li:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 11px;
+        width: 11px;
+        left: -20px;
+        top: 9px;
+        border-radius: 50%;
+        background: url("/images/bullet.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
 }
 
 /* Tablets */
@@ -331,7 +352,7 @@
         display: block;
         height: 100%;
         width: 100%;
-        background: url("../images/trip-catch-map.png");
+        background: url("../images/trip-catch-map.jpeg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
